@@ -1,0 +1,39 @@
+// Tasks for processing and p5
+// only for Windows
+{
+    "version": "2.0.0",
+    "command": "cmd",
+    "args": ["/C"],
+    "tasks": 
+    [
+        {
+            "label": "Run (Processing 3)",
+            "type": "process",
+            "command": "D:\\OneDrive\\System64\\Apps\\Processing\\processing-java.exe",
+            "args": [
+                "--force",
+                "--sketch=${workspaceRoot}",
+                "--output=${workspaceRoot}\\out",
+                "--run"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Run (Processing 4)",
+            "type": "process",
+            "command": "D:\\OneDrive\\System64\\Apps\\Processing 4\\processing-java.exe",
+            "args": [
+                "--force",
+                "--sketch=${workspaceRoot}",
+                "--output=${workspaceRoot}\\out",
+                "--run"
+            ],
+            "group": "build",
+            "problemMatcher": []
+        }
+    ]
+}
